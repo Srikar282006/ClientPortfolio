@@ -66,7 +66,7 @@ const nav=useNavigate()
   return (
     <div
   className={`relative w-full min-h-screen pt-16 flex items-center overflow-hidden ${
-    !dark ? "text-black" : "text-white"  // changed condition: if not dark then black, else white
+    !dark ? "text-black bg-white" : "text-white "  // changed condition: if not dark then black, else white
   }`}
 >
   {/* Particles Background */}
