@@ -5,12 +5,14 @@ import ProjectsPage from './pages/ProjectsPage';
 import AboutPage from './pages/AboutPage';
 import ExperiencePage from './pages/ExperiencePage';
 import ProjectDetailsPage from './pages/ProjectDetailPage'
+import { ThemeProvider } from './components/ThemeContext';
 import {BrowserRouter  as Router,Routes,Route } from 'react-router-dom'
 
 
 function App() {
   return (
     <>
+    <ThemeProvider>   
  <Router>
       <Routes>
         <Route path="/" element={<HomePage/>} />
@@ -21,6 +23,7 @@ function App() {
         <Route path="/projects/:id" element={<ProjectDetailsPage />} />
       </Routes>
   </Router>
+  </ThemeProvider>   
     </>
   );
 }
