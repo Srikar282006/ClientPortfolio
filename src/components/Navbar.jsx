@@ -17,9 +17,13 @@ const Navbar = () => {
         <div className="navbar-start">
           {/* mobile hamburger */}
           <button
-            onClick={() => setIsOpen(true)}
-            className={`btn btn-ghost lg:hidden ${navbarText}`}
-          >
+  onClick={() => setIsOpen(true)}
+  className={`p-2 rounded-md lg:hidden transition-colors ${
+    dark
+      ? 'bg-transparent text-white hover:bg-gray-800'
+      : 'bg-transparent text-black hover:bg-gray-200'
+  }`}
+>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className={`h-6 w-6 ${dark ? 'hover:text-white' : 'hover:text-gray-100'}`}
