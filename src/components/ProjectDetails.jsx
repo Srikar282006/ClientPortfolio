@@ -36,6 +36,7 @@ const ProjectDetails = () => {
 
   return (
     <>
+    <div className={`${dark?"bg-black":"bg-white"}`}>
     {dark && (
             <Particles
               id="tsparticles"
@@ -47,7 +48,7 @@ const ProjectDetails = () => {
 
     <div
       className={`min-h-screen py-10 px-5 md:px-16 ${
-        dark ? " text-white" : "bg-white text-black"
+        dark ? " text-white bg-black" : "bg-white text-black"
       }`}
     >
       <button
@@ -125,6 +126,7 @@ const ProjectDetails = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
     </>
   );

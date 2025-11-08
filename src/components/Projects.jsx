@@ -101,6 +101,7 @@ const Projects = ({ selectedTag = "All" }) => {
 
   return (
     <>
+<div className={`${dark?"bg-black":"bg-white"}`}>
       {dark && (
         <Particles
           id="tsparticles"
@@ -110,7 +111,7 @@ const Projects = ({ selectedTag = "All" }) => {
         />
       )}
 
-      <div className="mt-3">
+      <div className={`mt-3 ${dark?"bg-black":"bg-white"}`}>
         <h1
           className={`text-center text-3xl sm:text-3xl md:text-5xl lg:text-5xl ${
             !dark ? "text-black" : "text-white"
@@ -251,6 +252,7 @@ const Projects = ({ selectedTag = "All" }) => {
             </button>
           </div>
         )}
+      </div>
       </div>
     </>
   );

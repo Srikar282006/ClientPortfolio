@@ -76,6 +76,7 @@ const Experience = () => {
 
   return (
     <>
+    <div className={`${dark?"bg-black":"bg-white"}`}>
       {dark && (
         <Particles
           id="tsparticles"
@@ -187,6 +188,7 @@ const Experience = () => {
             </li>
           ))}
         </ul>
+      </div>
       </div>
     </>
   );

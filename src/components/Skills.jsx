@@ -61,7 +61,7 @@ const Skills = () => {
     };
 
     return (
-        <div className='mt-3 py-11 flex flex-col items-center'>
+        <div className={`mt-3 py-11 flex flex-col items-center ${dark?"bg-black":"bg-white"}`}>
             <h1 className={`text-3xl font-bold ${dark ? "text-white" : "text-black"}`}>Technical Skills</h1>
             <p className='text-gray-400 mt-2'>My expertise across various technologies and tools</p>
             

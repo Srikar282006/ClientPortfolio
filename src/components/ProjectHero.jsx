@@ -37,6 +37,7 @@ const ProjectHero = ({ onTagSelect }) => {
 
   return (
     <>
+    <div className={`${dark?"bg-black":"bg-white"}`}>
       {dark && (
         <Particles
           id="tsparticles"
@@ -47,7 +48,7 @@ const ProjectHero = ({ onTagSelect }) => {
       )}
 
       <section
-        className="min-h-screen flex flex-col items-center justify-center px-6 py-20 relative transition-all duration-500"
+        className={`min-h-screen flex flex-col items-center justify-center px-6 py-20 relative transition-all duration-500 ${dark?"bg-black":"bg-white"}`}
       >
         <h1
           className={`text-4xl md:text-5xl font-extrabold text-center mb-3 ${
@@ -88,6 +89,7 @@ const ProjectHero = ({ onTagSelect }) => {
           })}
         </div>
       </section>
+      </div>
     </>
   );
 };

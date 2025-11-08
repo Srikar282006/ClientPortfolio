@@ -34,7 +34,7 @@ const AboutHero = () => {
     <>
     <section
       className={`relative flex flex-col items-center justify-center text-center min-h-screen ${
-        dark ? " text-white" : " text-black"
+        dark ? " text-white bg-black" : " text-black bg-white"
       }`}
     >
       {/* Show particles only in dark mode */}

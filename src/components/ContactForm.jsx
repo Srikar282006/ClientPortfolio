@@ -139,6 +139,7 @@ const ContactForm = () => {
     // Main render: Contact Form with two-column layout
     return (
         <>
+        <div className={`${dark?"bg-black":"bg-white"}`}>
         {/* Particles Background */}
           {dark && (  // if dark, show particles
             <Particles
@@ -298,6 +299,7 @@ const ContactForm = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         </>
     );
