@@ -243,15 +243,16 @@ const Projects = ({ selectedTag = "All" }) => {
         </div>
 
         {!showAll && (
-          <div className="flex justify-center hover:px-2">
-            <button
-              className="btn w-auto text-center bg-white border rounded-md hover:bg-gray-200"
-              onClick={handleViewMore}
-            >
-              View more <FaArrowRight className="ml-2 mt-1" />
-            </button>
-          </div>
-        )}
+  <div className="flex justify-center hover:px-2">
+    <button
+      className="btn w-auto text-center bg-white border rounded-md hover:bg-gray-200"
+      onClick={handleViewMore}
+    >
+      View more <FaArrowRight className="ml-2 mt-1" />
+    </button>
+  </div>
+)}
+
       </div>
       </div>
     </>
