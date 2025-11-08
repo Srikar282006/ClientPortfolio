@@ -8,7 +8,7 @@ import { useTheme } from "../components/ThemeContext";
 
 const ProjectsPage = () => {
   const [selectedTag, setSelectedTag] = useState("All");
-   const dark=useTheme()
+   const {dark}=useTheme()
   return (
 
     <>

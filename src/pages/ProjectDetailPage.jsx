@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 import { useTheme } from "../components/ThemeContext";
 
 const ProjectDetailsPage = () => {
-   const dark=useTheme()
+   const {dark}=useTheme()
   return (
   <>
 
