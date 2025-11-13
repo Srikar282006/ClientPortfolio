@@ -10,6 +10,7 @@ import { CiMail } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
 import { useTheme } from './ThemeContext'; // adjust the path
 import resume from "../assets/MERN_Stack_resume.pdf"
+import photo from '../assets/photo.jpg'
 import { useNavigate } from "react-router-dom";
 // === Star Particles Config ===
 const starOptions = {
@@ -135,14 +136,20 @@ const nav=useNavigate()
     </div>
    
 
-  <div className="w-full md:w-1/3 flex justify-center mt-8 md:mt-0">
-  <div className="bg-gray-300 dark:bg-gray-700 
-                  w-1/2 sm:w-2/3 md:w-3/4 lg:w-full 
-                  aspect-square rounded-full 
-                  flex items-center justify-center mr-2">
-    <img src={react} alt="cb" className="w-auto h-full object-cover "/>
+<div className="w-full md:w-1/3 flex justify-center mt-8 md:mt-0">
+  <div
+    className="w-1/2 sm:w-2/3 md:w-3/4 lg:w-full aspect-square 
+               flex items-center justify-center mr-2 overflow-hidden rounded-full border hover:border-black "
+  >
+    <img
+      src={photo}
+      alt="Profile"
+      className="w-full h-full object-cover rounded-full"
+    />
   </div>
 </div>
+
+
 
   </div>
 </div>
