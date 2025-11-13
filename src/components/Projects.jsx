@@ -244,13 +244,18 @@ const Projects = ({ selectedTag = "All" }) => {
 
         {!showAll && (
   <div className="flex justify-center hover:px-2">
-    <button
-      className="btn w-auto text-center bg-white border rounded-md hover:bg-gray-200"
-      onClick={handleViewMore}
-    >
-      View more <FaArrowRight className="ml-2 mt-1" />
-    </button>
-  </div>
+  <button
+    className={`w-auto text-center border rounded-md flex items-center gap-2 px-5 py-2 font-medium transition ${
+      dark
+        ? "bg-white text-black border-gray-300 hover:bg-gray-200"
+        : "bg-black text-white border-black hover:bg-gray-900"
+    }`}
+    onClick={handleViewMore}
+  >
+    View more <FaArrowRight className="ml-1 mt-1" />
+  </button>
+</div>
+
 )}
 
       </div>
