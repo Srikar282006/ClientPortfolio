@@ -8,6 +8,8 @@ import recommender from "../assets/recommender.png";
 import recipe from "../assets/recipe.png";
 import videocall from "../assets/videocall.png";
 import usermanager from  "../assets/usermanager.png"
+import chat from '../assets/chat.png'
+import car from '../assets/cars.png'
 
 const starOptions = {
   background: { color: "#000000" },
@@ -57,7 +59,19 @@ const Projects = ({ selectedTag = "All" }) => {
         "MERN,WebRTC,Node.js,React,JWT,Axios,Socket.io,Express,Bcrypt,MongoDB,JavaScript,UI/UX,REST API",
       details:
         "Real-time video and audio communication using WebRTC,,Integrated chat functionality during calls,,Secure JWT-based authentication and user management,,Low-latency peer-to-peer connections with Socket.io,,Responsive and intuitive design optimized for all devices,,Scalable backend handling multiple users efficiently",
-      gitlink: "https://github.com/Srikar282006/VideoCall_App",
+      gitlink: "https://github.com/Srikar282006/My-Video-Call/tree/master",
+    },
+    {
+      image: chat,
+      title: "Chat Application",
+      description:
+        "A real-time chat application built using the MERN stack and Socket.io, enabling instant one-on-one and group messaging with live updates. It features JWT-based authentication, dynamic message rendering, and a responsive modern UI powered by React and Redux Toolkit.",
+      Skills:
+        "Socket.io,Nodejs,React,TailwindCSS,UI/UX,MongoDB,RestApi,Axios,Express,DaisyUi,JWT,Bcrypt",
+      details:
+        "Built secure real-time messaging using Socket.io for instant delivery,,Designed a responsive chat interface with dynamic user and message updates,,Integrated JWT authentication for secure user login and sessions,,Implemented MongoDB for scalable message and user data storage",
+      gitlink:
+        "https://github.com/Srikar282006/My-chat",
     },
     {
       image: usermanager,
@@ -82,15 +96,26 @@ const Projects = ({ selectedTag = "All" }) => {
       gitlink:
         "https://github.com/Srikar282006/Recipe_Sharing_website.git",
     },
+    
+    {
+      image: car,
+      title: "Travel and Tours",
+      description:
+        "A responsive and visually appealing web application designed to showcase a wide range of travel packages and car rental options. Users can explore destinations, view package details. ",
+      Skills:
+        "React.js, Node.js,Nodemailer,Express.js,REST API, Tailwind CSS,UI/UX,Axios",
+      details:
+        "Dynamic travel and car data fetched from the backend with real-time rendering,,Structured RESTful API for efficient data communication between frontend and backend,,Interactive destination cards with images, descriptions, and highlights for better visual engagement,,Real-time updates with search and filtering features,,Responsive and intuitive dashboard UI for seamless navigation,,Seamless navigation between travel and car sections with optimized routing and lazy loading",
+      gitlink: "https://github.com/Srikar282006/TravelsandTour",
+    },
+    
   ];
 
-  useEffect(() => {
-    if (window.location.pathname === "/projects") {
-      setShowAll(true);
-    } else {
-      setShowAll(false);
-    }
-  }, []);
+ useEffect(() => {
+  const path = window.location.pathname;
+  setShowAll(path === "/projects");
+}, [window.location.pathname]);
+
 
   const filteredProjects =
     selectedTag === "All"
@@ -189,24 +214,25 @@ const Projects = ({ selectedTag = "All" }) => {
 
                     {/* ✅ Show 5 points on Home, all points on Projects/Details */}
                     <div
-                      className={`flex flex-col gap-2 text-left px-4 ${
-                        dark ? "text-gray-400" : "text-gray-600"
-                      }`}
-                    >
-                      {(showAll ||
-                      window.location.pathname.startsWith("/projects/")
-                        ? elem.details.split(",,")
-                        : elem.details.split(",,").slice(0, 5)
-                      ).map((point, i) => (
-                        <p key={i} className="flex items-start">
-                          <FaArrowRight
-                            size={13}
-                            className="mt-1 mr-2 flex-shrink-0 text-gray-500"
-                          />
-                          {point.trim()}
-                        </p>
-                      ))}
-                    </div>
+  className={`flex flex-col gap-2 text-left px-4 ${
+    dark ? "text-gray-400" : "text-gray-600"
+  }`}
+>
+  {(
+    showAll || location.pathname.startsWith("/projects/")
+      ? elem.details.split(",,")
+      : elem.details.split(",,").slice(0, 3) // ✅ only 3 points on home
+  ).map((point, i) => (
+    <p key={i} className="flex items-start">
+      <FaArrowRight
+        size={13}
+        className="mt-1 mr-2 flex-shrink-0 text-gray-500"
+      />
+      {point.trim()}
+    </p>
+  ))}
+</div>
+
                   </div>
 
                   <div className="flex justify-between items-center mt-6">

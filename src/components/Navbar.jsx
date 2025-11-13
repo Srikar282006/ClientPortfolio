@@ -39,7 +39,7 @@ const Navbar = () => {
               />
             </svg>
           </button>
-          <a className={`text-xl ${navbarText}`}>Srikar</a>
+          <a className={`text-xl ${navbarText}`}>Srikar </a>
         </div>
 
         {/* desktop menu */}
@@ -66,11 +66,12 @@ const Navbar = () => {
         {/* theme toggle */}
         <div className="navbar-end">
           <button
-            onClick={toggleTheme}
-            className={`btn btn-ghost ${navbarText} ${
-              dark ? 'hover:text-black' : 'hover:text-yellow-500'
-            }`}
-          >
+  onClick={toggleTheme}
+  className={`btn btn-ghost ${navbarText} transition-colors duration-200 ${
+    dark ? 'hover:text-white hover:bg-gray-800' : 'hover:text-yellow-500'
+  }`}
+>
+
             {dark ? (
               <svg
                 className="swap-on h-7 w-7 fill-current"

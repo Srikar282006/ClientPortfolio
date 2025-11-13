@@ -31,43 +31,46 @@ const Experience = () => {
     {
       title: "Full Web Developer",
       Date: "January 2025 - March 2025",
-      Venue: "Telangana, India",
+      Venue: "Remote – USA-based Consulting Firm",
       description:
-        "Designed and implemented a web portal for faculty-student collaboration in UROP and Capstone projects.",
+        "Built and optimized a dynamic consulting firm website, integrating backend mailing functionality and improving the overall user interface.",
       details: [
-        "Developed a full-stack web portal using React.js, Node.js, and MongoDB for 3000+ UROP/Capstone students",
-        "Enabled task tracking, document sharing, and access control to streamline collaboration",
-        "Optimized and enhanced UI/UX, reducing page load time by 60% and improving responsiveness across devices",
-        "Achieved 75% grading accuracy improvement and 50% evaluation efficiency boost through workflow automation",
-      ],
+    "Developed a full-stack web application using React.js, Node.js, Express, and MongoDB to manage client services and inquiries",
+    "Integrated Nodemailer for automated email responses, client contact forms, and secure mail delivery",
+    "Enhanced UI/UX with a modern, responsive design, improving page navigation and session duration by 40%",
+    "Implemented API routes for efficient data handling and ensured smooth frontend-backend communication",
+    "Deployed the application on a cloud platform with optimized build configuration for fast load times",
+  ],
       category: "Work",
     },
     {
-      title: "Full Web Developer",
-      Date: "May 2025 - July 2025",
-      Venue: "Telangana, India",
-      description:
-        "Designed and implemented a web portal for faculty-student collaboration in UROP and Capstone projects.",
-      details: [
-        "Developed a full-stack web portal using React.js, Node.js, and MongoDB for 3000+ UROP/Capstone students",
-        "Enabled task tracking, document sharing, and access control to streamline collaboration",
-        "Optimized and enhanced UI/UX, reducing page load time by 60% and improving responsiveness across devices",
-        "Achieved 75% grading accuracy improvement and 50% evaluation efficiency boost through workflow automation",
-      ],
-      category: "Work",
+  title: "Full Stack Web Developer",
+  Date: "May 2025 - July 2025",
+  Venue: "IEEE Student Club, Telangana, India",
+  description:
+    "Developed and maintained the official IEEE student club web portal to manage events, projects, and member activities efficiently.",
+  details: [
+    "Built a full-stack web application using React.js, Node.js, Express, and MongoDB to centralize club activities and announcements",
+    "Implemented secure authentication, event registration, and content management features for students and coordinators",
+    "Enhanced UI/UX with modern design principles, ensuring responsiveness and accessibility across devices",
+    "Integrated email notifications and real-time updates for event schedules and project submissions",
+  ],
+  category: "Work",
     },
     {
-      title: "Team Leader",
-      Date: "August 2024 - December 2024",
-      Venue: "Hyderabad, India",
-      description: "Led a group of developers to build open-source AI projects.",
-      details: [
-        "Supervised 5-member development team",
-        "Organized code reviews and sprint planning",
-        "Improved team productivity by 40%",
-      ],
-      category: "Leadership",
-    },
+  title: "Team Leader & Secretary",
+  Date: "August 2025 - Present",
+  Venue: "IEEE Student Chapter, Hyderabad, India",
+  description:
+    "Leading and managing technical and organizational activities in the IEEE Student Chapter.",
+  details: [
+    "Guided a 5-member team in developing and maintaining club projects",
+    "Coordinated events, workshops, and student engagement programs",
+    "Enhanced collaboration and project efficiency within the chapter",
+  ],
+  category: "Leadership",
+}
+
   ];
 
   const filteredData = experiencedata.filter(

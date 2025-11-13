@@ -125,7 +125,7 @@ const nav=useNavigate()
 
   {/* Phone */}
   <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 cursor-pointer transition">
-    <a href="tel:+91897837024" target="_blank"><IoCallOutline className="text-lg text-black dark:text-white" /></a>
+    <a href="tel:+918978370824" target="_blank"><IoCallOutline className="text-lg text-black dark:text-white" /></a>
     
   </div>
 </div>
