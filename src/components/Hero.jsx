@@ -120,7 +120,7 @@ const nav=useNavigate()
 
   {/* Mail */}
   <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 cursor-pointer transition">
-<a href="mailto:srikarmach@gmail.com" target="_blank" ><CiMail className="text-lg text-black dark:text-white" /></a>
+<a href="https://mailto:srikarmach@gmail.com" target="_blank" ><CiMail className="text-lg text-black dark:text-white" /></a>
     
   </div>
 
